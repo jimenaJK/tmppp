@@ -4,8 +4,8 @@ ode_js:
 before_install:
   - sudo apt-get update
   - sudo apt install git -y
-  - sudo apt install software-properties-common
-  - sudo add-apt-repository ppa:deadsnakes/ppa
+  - sudo apt install software-properties-common -y
+  - sudo add-apt-repository ppa:deadsnakes/ppa -y
   - git clone https://github.com/Chia-Network/chia-blockchain.git -b latest --recurse-submodules
   - cd chia-blockchain
   - sh install.sh
