@@ -1,8 +1,7 @@
 language: node_js
 ode_js:
-  - "7"
+  - 7
 before_install:
-  - "apt update"
-  - "npm install -g npm@^2"
+  - sudo apt-get update
 install:
   - npm install -g bower
