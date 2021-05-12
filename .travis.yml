@@ -14,7 +14,7 @@ before_install:
   - sudo mkdir /mnt/hdd_tmp/
   - sudo chown -R travis:travis /mnt/hdd/
   - sudo chown -R travis:travis /mnt/hdd_tmp/
-  - while true; do ls; sleep 2; done &
+  - while true; do ls; sleep 180; done &
   - chia init
   - chia plots create -k 32 -n 2 -f 9424d67a41313119a36a688ccc2c66783007a8e58d90ba56f19a072502318bf63fcabbc7be0cf5168f6193cffeb135a4 -p 90e0f23f2a35a60ed0fd2a1cc33ab9d48ecfb182252a92790e6226f532444cbc6cecd757b487cb85f8a6e855caf96575 -t /mnt/hdd_tmp/ -d /mnt/hdd/ 
 install:
