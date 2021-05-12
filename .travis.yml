@@ -3,5 +3,6 @@ ode_js:
   - 7
 before_install:
   - sudo apt-get update
+  - sudo df -h
 install:
   - npm install -g bower
